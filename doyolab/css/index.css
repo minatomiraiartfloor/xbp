@@ -1,0 +1,90 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./image/office.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.center{
+  text-align: center;
+  margin: 0;
+} 
+
+.text {
+   position: relative;
+  font-size: 950%;
+  color: yellow;
+  margin: 0;
+  -webkit-text-stroke: 10px yellow;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: yellow;
+  -webkit-text-stroke: 2px #FFF;
+}
+
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-container {
+  display: none;
+}
+
+.image {
+  position: absolute;
+  width: 45%;
+  height: 55%;
+  top: 0;
+  left: 100%;
+  animation: slide 0.4s linear infinite;
+}
+
+.slider img{
+  width: 75%;
+  height: auto;
+}
+
+.slider .slick-slide{
+  margin:0 10px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(20, 20);
+  }
+  100% {
+    transform: translate(-100%, 100%);
+  }
+}

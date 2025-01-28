@@ -67,11 +67,11 @@ const images = [
     arrows: false,
     autoplay: true,
     autoplaySpeed: 0,
-    speed: 6900,//
+    speed: 7500,//
     infinite: true,
     pauseOnHover: false,
     pauseOnFocus: false,
     cssEase: 'linear',
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 1,
   });
